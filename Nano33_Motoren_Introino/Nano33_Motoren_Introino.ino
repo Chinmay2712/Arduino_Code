@@ -12,6 +12,12 @@ int forwardsRight = 88;
 int backwardsRight = 100;
 int forwardsLeft = 100;
 int backwardsLeft = 88;
+//int servoStop = 94;
+
+// int forwardsRight = 100;
+// int backwardsRight = 100;
+// int forwardsLeft = 100;
+// int backwardsLeft = 100;
 int servoStop = 94;
 
 char keyCommand;
@@ -30,6 +36,7 @@ if (Serial.available() > 0){
     
     switch(keyCommand){
       case 'f': 
+        Serial.println("I received the F command!"); // Add this line
         servoRight.attach(pinServoRight);
         servoLeft.attach(pinServoLeft);
           servoRight.write(forwardsRight);
