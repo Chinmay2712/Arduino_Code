@@ -1,0 +1,8 @@
+offsets:
+  accel: [-16, -98, -19]
+  mag:   [-147, -201, -299]
+  gyro:  [-5, 7, -6]
+  radius_accel: 1000
+  radius_mag:   1057
+
+
